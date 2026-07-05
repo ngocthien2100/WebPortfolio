@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 
 export default function Hero({ content }) {
   return (
@@ -27,6 +27,15 @@ export default function Hero({ content }) {
               </a>
               <a href="#contact" className="secondary-button">
                 {content.secondaryCta} <Mail size={18} />
+              </a>
+              <a
+                href="/assets/NguyenNgocThien_CV.pdf"
+                download="NguyenNgocThien_CV.pdf"
+                className="cv-download-button"
+                aria-label="Tải xuống CV PDF"
+              >
+                <Download size={18} />
+                {content.downloadCv}
               </a>
             </div>
 

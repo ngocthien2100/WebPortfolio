@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Education from "./components/Education.jsx";
+import Experience from "./components/Experience.jsx";
+import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
@@ -77,9 +79,11 @@ export default function App() {
         <About content={content.about} />
         <Skills content={content.skills} />
         <Projects content={content.projects} contactGithub={content.contact.github} />
+        <Experience content={content.experience} />
         <Education content={content.education} />
         <Contact content={content.contact} />
       </main>
+      <Footer content={content} />
     </div>
   );
 }

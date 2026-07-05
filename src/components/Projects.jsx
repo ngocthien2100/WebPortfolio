@@ -1,5 +1,13 @@
 import { ExternalLink, Github } from "lucide-react";
 
+const BADGE_CLASS = {
+  java: "tech-badge-java",
+  db: "tech-badge-db",
+  web: "tech-badge-web",
+  tool: "tech-badge-tool",
+  pattern: "tech-badge-pattern",
+};
+
 export default function Projects({ content, contactGithub }) {
   return (
     <section id="projects" className="section-padding">
@@ -7,9 +15,7 @@ export default function Projects({ content, contactGithub }) {
         <div className="section-heading">
           <span>{content.kicker}</span>
           <h2>{content.title}</h2>
-          <p>
-            {content.body}
-          </p>
+          <p>{content.body}</p>
         </div>
         <div className="grid gap-5 lg:grid-cols-3">
           {content.items.map((project) => (
@@ -27,13 +33,20 @@ export default function Projects({ content, contactGithub }) {
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.stack.map((item) => (
-                  <span key={item} className="mini-pill">
-                    {item}
-                  </span>
-                ))}
+
+              {/* Tech Stack Badges */}
+              <div className="tech-badge-group mt-5">
+                {project.stack.map((item) => {
+                  const badgeName = typeof item === "string" ? item : item.name;
+                  const badgeType = typeof item === "string" ? "tool" : item.type;
+                  return (
+                    <span key={badgeName} className={`tech-badge ${BADGE_CLASS[badgeType] || "tech-badge-tool"}`}>
+                      {badgeName}
+                    </span>
+                  );
+                })}
               </div>
+
               <div className="mt-7 flex gap-3">
                 <a href="#contact" className="project-button">
                   <ExternalLink size={16} /> {content.demoButton}

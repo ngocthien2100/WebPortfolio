@@ -1,3 +1,5 @@
+import { GraduationCap } from "lucide-react";
+
 export default function Education({ content }) {
   return (
     <section id="education" className="section-padding">
@@ -5,25 +7,35 @@ export default function Education({ content }) {
         <div className="section-heading">
           <span>{content.kicker}</span>
           <h2>{content.title}</h2>
-          <p>
-            {content.body}
-          </p>
+          <p>{content.body}</p>
         </div>
-        <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-4 top-2 h-[calc(100%-1rem)] w-px bg-[var(--timeline)] sm:left-1/2" />
+
+        <div className="edu-timeline">
           {content.items.map((item, index) => (
-            <article
-              key={item.title}
-              className={`timeline-item ${index % 2 === 0 ? "sm:pr-[54%]" : "sm:ml-[54%]"}`}
-            >
-              <span className="timeline-marker" aria-hidden="true" />
-              <div className="glass-card p-5">
-                <p className="text-sm font-semibold text-[var(--accent)]">{item.period}</p>
-                <h3 className="mt-2 text-xl font-semibold text-[var(--heading)]">{item.title}</h3>
-                <p className="mt-3 leading-7 text-[var(--muted)]">{item.detail}</p>
+            <div key={item.title} className={`edu-timeline-row ${index % 2 === 0 ? "edu-row-left" : "edu-row-right"}`}>
+              {/* Connector dot */}
+              <div className="edu-connector" aria-hidden="true">
+                <div className="edu-connector-dot">
+                  <GraduationCap size={14} />
+                </div>
               </div>
-            </article>
+
+              {/* Card */}
+              <article className="edu-card glass-card">
+                <div className="edu-card-inner">
+                  <p className="edu-period">{item.period}</p>
+                  <h3 className="edu-school">{item.title}</h3>
+                  {item.degree && (
+                    <div className="edu-degree-badge">{item.degree}</div>
+                  )}
+                  <p className="edu-detail">{item.detail}</p>
+                </div>
+              </article>
+            </div>
           ))}
+
+          {/* Center spine */}
+          <div className="edu-spine" aria-hidden="true" />
         </div>
       </div>
     </section>

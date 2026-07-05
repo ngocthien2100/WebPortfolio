@@ -8,6 +8,7 @@ export const languages = {
       { label: "Giới thiệu", href: "#about" },
       { label: "Kỹ năng", href: "#skills" },
       { label: "Dự án", href: "#projects" },
+      { label: "Kinh nghiệm", href: "#experience" },
       { label: "Học vấn", href: "#education" },
       { label: "Liên hệ", href: "#contact" },
     ],
@@ -19,6 +20,7 @@ export const languages = {
         "Tôi là sinh viên Công nghệ thông tin, đang phát triển theo hướng lập trình phần mềm thực tế với nền tảng OOP, cơ sở dữ liệu, mô hình MVC và Java/SQL.",
       primaryCta: "Xem dự án",
       secondaryCta: "Liên hệ tôi",
+      downloadCv: "Tải xuống CV",
       stats: [
         ["Java", "Ngôn ngữ chính"],
         ["MVC", "Định hướng nền tảng"],
@@ -110,7 +112,12 @@ export const languages = {
           imageAlt: "Minh họa giao diện ứng dụng quản lý tin tức",
           description:
             "Website đọc và quản lý tin tức với trang chủ, chi tiết bài viết, lọc danh mục, tin mới và tin xem nhiều.",
-          stack: ["Java Servlet/JSP", "JDBC", "MySQL", "Maven"],
+          stack: [
+            { name: "Java Servlet/JSP", type: "java" },
+            { name: "JDBC", type: "java" },
+            { name: "MySQL", type: "db" },
+            { name: "Maven", type: "tool" },
+          ],
           highlights: [
             "Đăng nhập, đăng ký, phân quyền Admin/Tác giả.",
             "CRUD bài viết, danh mục và người dùng.",
@@ -123,7 +130,12 @@ export const languages = {
           imageAlt: "Minh họa hệ thống quản lý dữ liệu và báo cáo",
           description:
             "Ứng dụng desktop quản lý hội viên, gói tập, huấn luyện viên, nhân viên và doanh thu.",
-          stack: ["Java Swing", "JDBC", "MySQL", "MVC"],
+          stack: [
+            { name: "Java Swing", type: "java" },
+            { name: "JDBC", type: "java" },
+            { name: "MySQL", type: "db" },
+            { name: "MVC", type: "pattern" },
+          ],
           highlights: [
             "Áp dụng mô hình MVC kết nối MySQL bằng JDBC.",
             "CRUD dữ liệu, đăng nhập phân quyền.",
@@ -136,7 +148,12 @@ export const languages = {
           imageAlt: "Minh họa không gian làm việc lập trình",
           description:
             "Website portfolio cá nhân song ngữ, có giao diện Glassmorphism, Dark/Light Mode và bố cục responsive.",
-          stack: ["React", "Tailwind CSS", "Vite", "localStorage"],
+          stack: [
+            { name: "React", type: "web" },
+            { name: "Tailwind CSS", type: "web" },
+            { name: "Vite", type: "tool" },
+            { name: "localStorage", type: "tool" },
+          ],
           highlights: [
             "Chuyển đổi Tiếng Việt/Tiếng Anh.",
             "Lưu theme và ngôn ngữ đã chọn.",
@@ -145,29 +162,47 @@ export const languages = {
         },
       ],
     },
-    education: {
-      kicker: "Học vấn & Kinh nghiệm",
-      title: "Nền tảng học tập kết hợp với trải nghiệm kỹ thuật thực tế.",
+    experience: {
+      kicker: "Kinh nghiệm",
+      title: "Trải nghiệm kỹ thuật thực tế tại môi trường doanh nghiệp.",
       body:
-        "Quá trình học tập giúp tôi xây dựng nền tảng lập trình, còn kinh nghiệm kỹ thuật giúp tôi hiểu thêm về quy trình hỗ trợ người dùng và xử lý sự cố.",
+        "Quá trình thực tập giúp tôi hiểu rõ hơn về quy trình hỗ trợ kỹ thuật, giao tiếp khách hàng và môi trường làm việc chuyên nghiệp.",
+      items: [
+        {
+          period: "2023",
+          duration: "3 tháng",
+          title: "Thực tập sinh kỹ thuật",
+          company: "FPT Telecom — Chi nhánh Gò Vấp, TP.HCM",
+          type: "internship",
+          detail:
+            "Hỗ trợ lắp đặt và cấu hình modem, router, camera; kiểm tra kết nối mạng, xử lý lỗi thiết bị, hướng dẫn người dùng và rèn luyện giao tiếp khách hàng theo quy trình kỹ thuật.",
+          achievements: [
+            "Lắp đặt và cấu hình thiết bị mạng (modem, router, camera IP).",
+            "Chẩn đoán và xử lý sự cố kết nối mạng tại nhà khách hàng.",
+            "Hướng dẫn người dùng sử dụng thiết bị và dịch vụ.",
+          ],
+        },
+      ],
+    },
+    education: {
+      kicker: "Học vấn",
+      title: "Nền tảng học tập xây dựng tư duy lập trình và kỹ thuật.",
+      body:
+        "Quá trình học tập giúp tôi xây dựng nền tảng lập trình vững chắc, từ tư duy thuật toán đến thiết kế phần mềm thực tế.",
       items: [
         {
           period: "2024 - hiện tại",
           title: "Trường Cao đẳng Văn Lang Sài Gòn",
+          degree: "Ngành Công nghệ Thông tin",
           detail:
-            "Ngành Công nghệ Thông tin. Tích lũy kiến thức về tư duy lập trình, OOP, cấu trúc dữ liệu và giải thuật, thiết kế cơ sở dữ liệu và quy trình phát triển phần mềm.",
+            "Tích lũy kiến thức về tư duy lập trình, OOP, cấu trúc dữ liệu và giải thuật, thiết kế cơ sở dữ liệu và quy trình phát triển phần mềm.",
         },
         {
           period: "2018 - 2021",
           title: "Trường Cao đẳng Lý Tự Trọng TP.HCM",
+          degree: "THPT & Trung cấp nghề - Kỹ thuật phần cứng",
           detail:
-            "THPT và Trung cấp nghề - Kỹ thuật phần cứng máy tính. Hoàn thành chương trình song song, có kỹ năng lắp ráp, cài đặt, chẩn đoán lỗi và bảo trì hệ thống máy tính, mạng cơ bản.",
-        },
-        {
-          period: "Kinh nghiệm",
-          title: "Thực tập sinh kỹ thuật - FPT Telecom Gò Vấp",
-          detail:
-            "Hỗ trợ lắp đặt và cấu hình modem, router, camera; kiểm tra kết nối mạng, xử lý lỗi thiết bị, hướng dẫn người dùng và rèn luyện giao tiếp khách hàng theo quy trình kỹ thuật.",
+            "Hoàn thành chương trình song song, có kỹ năng lắp ráp, cài đặt, chẩn đoán lỗi và bảo trì hệ thống máy tính, mạng cơ bản.",
         },
       ],
     },
@@ -187,7 +222,16 @@ export const languages = {
       email: "toilaboi400@gmail.com",
       phone: "090 669 0582",
       github: "https://github.com/ngocthien2100",
+      linkedin: "https://linkedin.com/in/ngocthien2100",
       address: "Phường Tân Sơn Nhất, TP. Hồ Chí Minh",
+    },
+    footer: {
+      tagline: "Software Developer Intern · Java · MySQL · MVC",
+      available: "Sẵn sàng thực tập",
+      copyright: "Nguyễn Ngọc Thiên",
+      builtWith: "Xây dựng bằng React & Vite",
+      quickLinksTitle: "Điều hướng nhanh",
+      connectTitle: "Kết nối",
     },
   },
   en: {
@@ -199,6 +243,7 @@ export const languages = {
       { label: "About", href: "#about" },
       { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
+      { label: "Experience", href: "#experience" },
       { label: "Education", href: "#education" },
       { label: "Contact", href: "#contact" },
     ],
@@ -210,6 +255,7 @@ export const languages = {
         "I am an IT student growing toward practical software development with a foundation in OOP, databases, MVC, Java, and SQL.",
       primaryCta: "View Projects",
       secondaryCta: "Contact Me",
+      downloadCv: "Download CV",
       stats: [
         ["Java", "Core language"],
         ["MVC", "Main foundation"],
@@ -292,7 +338,12 @@ export const languages = {
           imageAlt: "UI illustration for news management website",
           description:
             "A news reading and management website with homepage, article details, category filtering, latest posts, and most-viewed posts.",
-          stack: ["Java Servlet/JSP", "JDBC", "MySQL", "Maven"],
+          stack: [
+            { name: "Java Servlet/JSP", type: "java" },
+            { name: "JDBC", type: "java" },
+            { name: "MySQL", type: "db" },
+            { name: "Maven", type: "tool" },
+          ],
           highlights: [
             "Login, registration, and Admin/Author authorization.",
             "CRUD for articles, categories, and users.",
@@ -305,7 +356,12 @@ export const languages = {
           imageAlt: "Database and analytics illustration",
           description:
             "A desktop application for managing members, membership packages, trainers, employees, and revenue.",
-          stack: ["Java Swing", "JDBC", "MySQL", "MVC"],
+          stack: [
+            { name: "Java Swing", type: "java" },
+            { name: "JDBC", type: "java" },
+            { name: "MySQL", type: "db" },
+            { name: "MVC", type: "pattern" },
+          ],
           highlights: [
             "MVC architecture connected to MySQL with JDBC.",
             "CRUD data management and role-based login.",
@@ -318,7 +374,12 @@ export const languages = {
           imageAlt: "Code workspace illustration",
           description:
             "A bilingual personal portfolio with Glassmorphism UI, Dark/Light Mode, and responsive layout.",
-          stack: ["React", "Tailwind CSS", "Vite", "localStorage"],
+          stack: [
+            { name: "React", type: "web" },
+            { name: "Tailwind CSS", type: "web" },
+            { name: "Vite", type: "tool" },
+            { name: "localStorage", type: "tool" },
+          ],
           highlights: [
             "Vietnamese/English language switching.",
             "Saved theme and language preference.",
@@ -327,29 +388,47 @@ export const languages = {
         },
       ],
     },
-    education: {
-      kicker: "Education & Experience",
-      title: "Academic foundation combined with practical technical experience.",
+    experience: {
+      kicker: "Experience",
+      title: "Practical technical experience in a professional enterprise environment.",
       body:
-        "My studies build software fundamentals, while technical experience helps me understand user support, troubleshooting, and service workflows.",
+        "My internship gave me firsthand insight into technical support workflows, customer communication, and professional workplace practices.",
+      items: [
+        {
+          period: "2023",
+          duration: "3 months",
+          title: "Technical Intern",
+          company: "FPT Telecom — Go Vap Branch, Ho Chi Minh City",
+          type: "internship",
+          detail:
+            "Supported modem, router, and camera installation and configuration; checked network connections, handled device issues, guided users, and practiced customer communication in technical workflows.",
+          achievements: [
+            "Installed and configured network devices (modems, routers, IP cameras).",
+            "Diagnosed and resolved network connectivity issues at customer sites.",
+            "Guided users on device operation and service usage.",
+          ],
+        },
+      ],
+    },
+    education: {
+      kicker: "Education",
+      title: "Academic foundation building programming thinking and technical skills.",
+      body:
+        "My studies build a strong software foundation, from algorithmic thinking to practical software design and development.",
       items: [
         {
           period: "2024 - Present",
           title: "Van Lang Sai Gon College",
+          degree: "Information Technology",
           detail:
-            "Information Technology major. Studying programming thinking, OOP, data structures and algorithms, database design, and software development processes.",
+            "Studying programming thinking, OOP, data structures and algorithms, database design, and software development processes.",
         },
         {
           period: "2018 - 2021",
           title: "Ly Tu Trong College of Ho Chi Minh City",
+          degree: "High School & Vocational — Computer Hardware Engineering",
           detail:
-            "High School and Vocational Program - Computer Hardware Engineering. Learned computer assembly, installation, troubleshooting, maintenance, and basic networking.",
-        },
-        {
-          period: "Experience",
-          title: "Technical Intern - FPT Telecom Go Vap",
-          detail:
-            "Supported modem, router, and camera installation and configuration; checked network connections, handled device issues, guided users, and practiced customer communication in technical workflows.",
+            "Learned computer assembly, installation, troubleshooting, maintenance, and basic networking.",
         },
       ],
     },
@@ -369,7 +448,16 @@ export const languages = {
       email: "toilaboi400@gmail.com",
       phone: "090 669 0582",
       github: "https://github.com/ngocthien2100",
+      linkedin: "https://linkedin.com/in/ngocthien2100",
       address: "Tan Son Nhat Ward, Ho Chi Minh City",
+    },
+    footer: {
+      tagline: "Software Developer Intern · Java · MySQL · MVC",
+      available: "Available for internship",
+      copyright: "Nguyen Ngoc Thien",
+      builtWith: "Built with React & Vite",
+      quickLinksTitle: "Quick Links",
+      connectTitle: "Connect",
     },
   },
 };
