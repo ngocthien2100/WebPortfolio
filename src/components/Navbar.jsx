@@ -21,10 +21,10 @@ export default function Navbar({ content, language, theme, onToggleLanguage, onT
   }, [isOpen]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-[var(--glass-border)] bg-[var(--nav-bg)] px-4 py-3 shadow-glass backdrop-blur-2xl">
+    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-[var(--glass-border)] bg-[var(--nav-bg)] px-3 py-2.5 shadow-glass backdrop-blur-2xl sm:px-4 sm:py-3">
         <a href="#home" className="group flex items-center gap-3" aria-label="Go to home section">
-          <span className="grid h-10 w-10 place-items-center rounded-xl border border-[var(--glass-border)] bg-[var(--glass-strong)] text-sm font-bold text-[var(--accent)] shadow-glow">
+          <span className="grid h-9 w-9 place-items-center rounded-xl border border-[var(--glass-border)] bg-[var(--glass-strong)] text-sm font-bold text-[var(--accent)] shadow-glow sm:h-10 sm:w-10">
             NT
           </span>
           <span className="hidden text-sm font-semibold tracking-wide text-[var(--text)] sm:block">
@@ -40,7 +40,7 @@ export default function Navbar({ content, language, theme, onToggleLanguage, onT
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <button
             type="button"
             onClick={onToggleLanguage}

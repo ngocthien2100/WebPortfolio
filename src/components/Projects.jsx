@@ -12,10 +12,10 @@ export default function Projects({ content, contactGithub }) {
           </p>
         </div>
         <div className="grid gap-5 lg:grid-cols-3">
-          {content.items.map((project, index) => (
+          {content.items.map((project) => (
             <article key={project.title} className="project-card">
-              <div className="mb-6 h-36 overflow-hidden rounded-2xl border border-[var(--glass-border)] bg-[var(--glass-strong)]">
-                <div className={`project-visual project-visual-${index + 1}`} aria-hidden="true" />
+              <div className="project-image-shell mb-6 overflow-hidden rounded-2xl border border-[var(--glass-border)] bg-[var(--glass-strong)]">
+                <img src={project.image} alt={project.imageAlt} className="project-image" loading="lazy" decoding="async" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--heading)]">{project.title}</h3>
               <p className="mt-3 leading-7 text-[var(--muted)]">{project.description}</p>

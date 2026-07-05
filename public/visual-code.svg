@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Code illustration</title>
+  <desc id="desc">Abstract programming screen with code blocks and glowing accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09111f"/>
+      <stop offset="100%" stop-color="#162c5a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64d7ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff6148" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="36" fill="url(#bg)"/>
+  <rect x="64" y="64" width="672" height="472" rx="28" fill="#0d1628" stroke="#2c416f" stroke-width="2"/>
+  <rect x="64" y="64" width="672" height="64" rx="28" fill="#111d34"/>
+  <circle cx="108" cy="96" r="8" fill="#ff6148"/>
+  <circle cx="140" cy="96" r="8" fill="#ffcc66"/>
+  <circle cx="172" cy="96" r="8" fill="#2de06f"/>
+  <rect x="104" y="164" width="250" height="24" rx="12" fill="#64d7ff" opacity="0.9"/>
+  <rect x="104" y="208" width="380" height="20" rx="10" fill="#dfe7ef" opacity="0.82"/>
+  <rect x="104" y="246" width="300" height="20" rx="10" fill="#dfe7ef" opacity="0.48"/>
+  <rect x="104" y="284" width="418" height="20" rx="10" fill="#dfe7ef" opacity="0.72"/>
+  <rect x="104" y="322" width="210" height="20" rx="10" fill="#ff6148" opacity="0.92"/>
+  <rect x="104" y="360" width="356" height="20" rx="10" fill="#dfe7ef" opacity="0.62"/>
+  <rect x="104" y="398" width="270" height="20" rx="10" fill="#64d7ff" opacity="0.76"/>
+  <rect x="518" y="166" width="146" height="146" rx="28" fill="none" stroke="url(#glow)" stroke-width="4"/>
+  <path d="M564 206l32 32-32 32" fill="none" stroke="#dfe7ef" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M618 206l-32 32 32 32" fill="none" stroke="#dfe7ef" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="520" y="340" width="142" height="22" rx="11" fill="#64d7ff" opacity="0.85"/>
+  <rect x="520" y="378" width="112" height="18" rx="9" fill="#dfe7ef" opacity="0.48"/>
+  <rect x="520" y="406" width="126" height="18" rx="9" fill="#dfe7ef" opacity="0.32"/>
+</svg>

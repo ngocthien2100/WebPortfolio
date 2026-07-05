@@ -106,6 +106,8 @@ export const languages = {
       items: [
         {
           title: "Web Quản Lý Tin Tức",
+          image: "/visual-ui.svg",
+          imageAlt: "Minh họa giao diện ứng dụng quản lý tin tức",
           description:
             "Website đọc và quản lý tin tức với trang chủ, chi tiết bài viết, lọc danh mục, tin mới và tin xem nhiều.",
           stack: ["Java Servlet/JSP", "JDBC", "MySQL", "Maven"],
@@ -117,6 +119,8 @@ export const languages = {
         },
         {
           title: "Gym Management System",
+          image: "/visual-data.svg",
+          imageAlt: "Minh họa hệ thống quản lý dữ liệu và báo cáo",
           description:
             "Ứng dụng desktop quản lý hội viên, gói tập, huấn luyện viên, nhân viên và doanh thu.",
           stack: ["Java Swing", "JDBC", "MySQL", "MVC"],
@@ -128,6 +132,8 @@ export const languages = {
         },
         {
           title: "Portfolio Glassmorphism",
+          image: "/visual-code.svg",
+          imageAlt: "Minh họa không gian làm việc lập trình",
           description:
             "Website portfolio cá nhân song ngữ, có giao diện Glassmorphism, Dark/Light Mode và bố cục responsive.",
           stack: ["React", "Tailwind CSS", "Vite", "localStorage"],
@@ -282,6 +288,8 @@ export const languages = {
       items: [
         {
           title: "News Management Website",
+          image: "/visual-ui.svg",
+          imageAlt: "UI illustration for news management website",
           description:
             "A news reading and management website with homepage, article details, category filtering, latest posts, and most-viewed posts.",
           stack: ["Java Servlet/JSP", "JDBC", "MySQL", "Maven"],
@@ -293,6 +301,8 @@ export const languages = {
         },
         {
           title: "Gym Management System",
+          image: "/visual-data.svg",
+          imageAlt: "Database and analytics illustration",
           description:
             "A desktop application for managing members, membership packages, trainers, employees, and revenue.",
           stack: ["Java Swing", "JDBC", "MySQL", "MVC"],
@@ -304,6 +314,8 @@ export const languages = {
         },
         {
           title: "Glassmorphism Portfolio",
+          image: "/visual-code.svg",
+          imageAlt: "Code workspace illustration",
           description:
             "A bilingual personal portfolio with Glassmorphism UI, Dark/Light Mode, and responsive layout.",
           stack: ["React", "Tailwind CSS", "Vite", "localStorage"],

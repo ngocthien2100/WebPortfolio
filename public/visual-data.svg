@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Database illustration</title>
+  <desc id="desc">Abstract database and analytics visual with layered cards and glowing connections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08101b"/>
+      <stop offset="100%" stop-color="#132847"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2de06f"/>
+      <stop offset="100%" stop-color="#64d7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="36" fill="url(#bg)"/>
+  <ellipse cx="400" cy="490" rx="250" ry="58" fill="#000" opacity="0.28"/>
+  <g transform="translate(160 118)">
+    <rect x="0" y="0" width="480" height="314" rx="30" fill="#0d1628" stroke="#27436d" stroke-width="2"/>
+    <rect x="48" y="42" width="384" height="46" rx="23" fill="#111d34"/>
+    <rect x="48" y="108" width="384" height="46" rx="23" fill="#111d34"/>
+    <rect x="48" y="174" width="384" height="46" rx="23" fill="#111d34"/>
+    <rect x="48" y="240" width="384" height="46" rx="23" fill="#111d34"/>
+    <g fill="url(#accent)">
+      <circle cx="88" cy="65" r="14"/>
+      <circle cx="88" cy="131" r="14"/>
+      <circle cx="88" cy="197" r="14"/>
+      <circle cx="88" cy="263" r="14"/>
+    </g>
+    <rect x="128" y="50" width="252" height="16" rx="8" fill="#dfe7ef" opacity="0.84"/>
+    <rect x="128" y="116" width="202" height="16" rx="8" fill="#dfe7ef" opacity="0.64"/>
+    <rect x="128" y="182" width="280" height="16" rx="8" fill="#dfe7ef" opacity="0.76"/>
+    <rect x="128" y="248" width="180" height="16" rx="8" fill="#dfe7ef" opacity="0.55"/>
+  </g>
+  <path d="M628 158c28 0 50 22 50 50s-22 50-50 50-50-22-50-50 22-50 50-50Z" fill="none" stroke="url(#accent)" stroke-width="4"/>
+  <path d="M628 178v42" stroke="#dfe7ef" stroke-width="10" stroke-linecap="round"/>
+  <path d="M607 199h42" stroke="#dfe7ef" stroke-width="10" stroke-linecap="round"/>
+  <rect x="548" y="322" width="154" height="122" rx="26" fill="#111d34" stroke="#27436d" stroke-width="2"/>
+  <rect x="578" y="354" width="94" height="16" rx="8" fill="#64d7ff" opacity="0.9"/>
+  <rect x="578" y="386" width="72" height="12" rx="6" fill="#dfe7ef" opacity="0.58"/>
+  <rect x="578" y="406" width="86" height="12" rx="6" fill="#dfe7ef" opacity="0.34"/>
+</svg>
